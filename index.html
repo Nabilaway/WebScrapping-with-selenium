@@ -65,12 +65,12 @@
                 $.each(obj,function(n,data){
                     
                     //isi tabel
-                    str+= "<tr><td>"+(n+1)+"</td>";
+                    str+= "<tr><td>"+data.No+"</td>";
+            	    str+= "<td><img src=\""+data.Image+"\"></td>";
                     str+= "<td>"+data.Judul+"</td>";
                     str+= "<td>"+data.Tahun+"</td>";
                     str+= "<td>"+data.Rating+"</td>";
-                    str+= "<td>"+data.tanggal+"</td>";
-                    str+= "<td>"+data.Tanggal_Scrapping+"</td></tr>";
+                    str+= "<td>"+data.Tanggal_Scraping+"</td></tr>";
                 });
                 //tag tabel penutup
                 str+="</table>";
